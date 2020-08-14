@@ -27,7 +27,7 @@ int prims_values[24] 	= {2,3,5,7,11,13,17,19,23,31,37,41,43,47,53,59,61,67,71,73
 int prims_contained[24];
 int prims_notContained[24];
 
-pthread_mutex_t thread_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t thread_mutex;// = PTHREAD_MUTEX_INITIALIZER;
 
 void initialize_prims(){
 	int i;
